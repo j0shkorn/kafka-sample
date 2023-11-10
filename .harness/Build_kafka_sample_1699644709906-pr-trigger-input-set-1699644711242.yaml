@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_kafka_sample_1699644709906-pr-trigger-input-set
+  identifier: Build_kafka_sample_1699644709906prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: build1dev
+  pipeline:
+    identifier: Build_kafka_sample_1699644709906
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
